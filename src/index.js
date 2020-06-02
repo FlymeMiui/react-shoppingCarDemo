@@ -1,5 +1,8 @@
-import ReactDom from 'react-dom'
-import React from 'react';
-import App from './App'
-ReactDom.render(<App />,document.getElementById("root"))
-
+import ReactDom from "react-dom";
+import React from "react";
+import App from "./App";
+import "./reset.css";
+ReactDom.render(<App />, document.getElementById("root"));
+if (module.hot) {
+  module.hot.accept();
+}
